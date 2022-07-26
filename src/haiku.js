@@ -1,15 +1,20 @@
 "use strict";
 
 export default class ThreeLine {
-  constructor() {
-    const haiku = new ThreeLine("You and me alone","Peace and quiet reigns","Delightful display","Madness of world locked away","Snowdrops bow their pure white heads","Scarves and sweaters everywhere" )
-    
-    this.line1 = line1;
-    this.line2 = line2;
-    this.line3 = line3;
+  constructor(text) {
+    this.text = text;
+    this.count = 0;
     this.syllables = 0;
-    console.log(haiku,ThreeLine);
+    //console.log(haiku,ThreeLine);
   }
+  // bring all option input into one text object
+  // cosnt inputLines = "You and me alone. Peace and quiet reigns. Madness of world locked away."
+  howManyLines(){
+    //find (.) each . is one line
+    
+  }
+
+
 }
   //this.line1[a] each word of fiveSyllableLines and sevenSyllableLines 
 //     checkSyllables(array){

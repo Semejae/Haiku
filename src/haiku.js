@@ -5,16 +5,21 @@ export default class ThreeLine {
     this.text = text;
     this.count = 0;
     this.syllables = 0;
-    //console.log(haiku,ThreeLine);
-  }
-  // bring all option input into one text object
-  // cosnt inputLines = "You and me alone. Peace and quiet reigns. Madness of world locked away."
-  howManyLines(){
-    //find (.) each . is one line
-    
   }
 
-
+  howManyLines(text){
+    let count = 0;
+    let newArray = text.split("");
+    for (let i = 0; i <= newArray.length; i++) {
+      if (newArray[i] == ".") {
+        count += 1;
+      } else {
+      }
+      
+  }
+  return count;
+  
+  } 
 }
   //this.line1[a] each word of fiveSyllableLines and sevenSyllableLines 
 //     checkSyllables(array){

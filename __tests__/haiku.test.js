@@ -8,8 +8,9 @@ describe('ThreeLine', () => {
   });
 
   test('input text must have three lines of haiku.', () => { 
-    const lines = new ThreeLine('You and me alone. Madness of world locked away. To the suns glory.');
-    expect(lines.howManyLines.text).toEqual(3);
+    const inputLines = new ThreeLine ('You and me alone. Madness of world locked away. To the suns glory.');
+    let text = inputLines.text;
+    expect(inputLines.howManyLines(text)).toEqual(3);
   });
 
 });
